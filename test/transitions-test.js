@@ -1,34 +1,29 @@
 import {expect} from 'chai';
 import hfb from '../src/index';
 
-describe('Hf Builder #addTransition', () => {
-  let link = {
-    rel: 'link',
-    href: '/users/1',
-  };
-
+describe('Hf Builder #transitions', () => {
   context('when transitions are not defined', () => {
     let hfObj = {};
 
-    it('adds the transition', () => {
+    it('adds the transitions array', () => {
       expect(hfObj.transitions).to.be.undefined;
-      hfb.addTransition(hfObj, link);
-      expect(hfObj.transitions[0]).to.deep.equal(link);
+      hfb.transitions(hfObj);
+      expect(hfObj).to.deep.equal({transitions: []});
     });
   });
 
   context('when not given an object', () => {
     context('when given a number', () => {
       it('returns a new object with the attributes added', () => {
-        const hfObj = hfb.addTransition(1, link);
-        expect(hfObj.transitions[0]).to.deep.equal(link);
+        const hfObj = hfb.transitions(1);
+        expect(hfObj).to.deep.equal([]);
       });
     });
 
     context('when given an array', () => {
       it('returns a new object with the attributes added', () => {
-        const hfObj = hfb.addTransition([1, 2], link);
-        expect(hfObj.transitions[0]).to.deep.equal(link);
+        const hfObj = hfb.transitions([1, 2]);
+        expect(hfObj).to.deep.equal([]);
       });
     });
   });

@@ -1,6 +1,18 @@
 import _ from './utils';
 
 export default {
+  attributes: (givenObj = {}) => {
+    let obj = (!_.isObject(givenObj) || _.isArray(givenObj)) ? {} : givenObj;
+    if (!obj.attributes) obj.attributes = {};
+    return obj.attributes;
+  },
+
+  transitions: (givenObj = {}) => {
+    let obj = (!_.isObject(givenObj) || _.isArray(givenObj)) ? {} : givenObj;
+    if (!obj.transitions) obj.transitions = [];
+    return obj.transitions;
+  },
+
   addMetaAttributes: (givenObj = {}, newMetaAttributes = {}) => {
     let obj = (!_.isObject(givenObj) || _.isArray(givenObj)) ? {} : givenObj;
     if (!obj.meta) obj.meta = {};
@@ -19,7 +31,6 @@ export default {
 
   addAttributes: (givenObj = {}, newAttributes = {}) => {
     let obj = (!_.isObject(givenObj) || _.isArray(givenObj)) ? {} : givenObj;
-    if (!_.isObject(obj) || _.isArray(obj)) obj = {};
     if (!obj.attributes) obj.attributes = {};
     _.extend(obj.attributes, newAttributes);
     return obj;
@@ -27,7 +38,6 @@ export default {
 
   addTransition: (givenObj = {}, newTransition = {}) => {
     let obj = (!_.isObject(givenObj) || _.isArray(givenObj)) ? {} : givenObj;
-    if (!_.isObject(obj) || _.isArray(obj)) obj = {};
     if (!obj.transitions) obj.transitions = [];
     if (!_.isEmpty(newTransition)) obj.transitions.push(newTransition);
     return obj;

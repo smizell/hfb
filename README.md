@@ -23,6 +23,14 @@ npm install hfb --save
 
 ## Usage
 
+### `hfb.attributes`
+
+Takes an Hf object and an attributes object. If `attributes` does not exist, it adds it to the Hf object. It then returns the `attributes` property.
+
+```js
+var attributes = hfb.attributes({}); // now {attributes: {}}
+```
+
 ### `hfb.addAttributes`
 
 Takes an Hf object and an attributes object. If `attributes` does not exist, it adds it to the Hf object. If the `attributes` exist, it does a merge of the given attributes.
@@ -56,6 +64,14 @@ The value of `hfObj` would be.
     hello: 'world'
   }
 }
+```
+
+### `hfb.transitions`
+
+Takes an Hf object and a transition object. If the `transitions` array does not exist, it adds it to the Hf object. It then returns the `transitions` array.
+
+```js
+var transitions = hfb.transitions({}); // now {transitions: []}
 ```
 
 ### `hfb.addTransition`

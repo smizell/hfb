@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import hfb from '../src/index';
 
-describe('Hf Builder #addAttributes', () => {
+describe('Hf Builder #addMetaAttributes', () => {
   context('when attributes are not defined', () => {
     let hfObj = {};
 

@@ -1,7 +1,7 @@
 import {expect} from 'chai';
 import hfb from '../src/index';
 
-describe('Hf Builder #addAttributes', () => {
+describe('Hf Builder #addMetaLink', () => {
   let link = {
     rel: 'link',
     href: '/users/1',
