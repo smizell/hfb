@@ -4,8 +4,6 @@
 
 Functions for building [Hf representations](https://github.com/smizell/hf).
 
-<!-- TOC depth:6 withLinks:1 updateOnSave:1 orderedList:0 -->
-
 - [Hf Builder (hfb)](#hf-builder-hfb)
 	- [Install](#install)
 	- [Usage](#usage)
@@ -15,7 +13,6 @@ Functions for building [Hf representations](https://github.com/smizell/hf).
 		- [`hfb.addMetaLink`](#hfbaddmetalink)
 	- [Developing and Contributing](#developing-and-contributing)
 	- [License](#license)
-<!-- /TOC -->
 
 ## Install
 
