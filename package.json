@@ -1,0 +1,27 @@
+{
+  "name": "hfb",
+  "version": "0.1.0",
+  "description": "Builder for Hf Representations",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "peasant test",
+    "develop": "nodemon --exec \"npm test\"",
+    "cover": "peasant cover",
+    "lint": "peasant lint",
+    "peasant": "peasant",
+    "ci": "peasant -s lint test build",
+    "prepublish": "npm run ci"
+  },
+  "author": "Stephen Mizell",
+  "license": "MIT",
+  "devDependencies": {
+    "peasant": "^0.5.2"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.0.14",
+    "lodash.assign": "^3.2.0",
+    "lodash.isarray": "^3.0.4",
+    "lodash.isempty": "^3.0.4",
+    "lodash.isobject": "^3.0.2"
+  }
+}
