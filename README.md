@@ -1,5 +1,7 @@
 # Hf Builder (hfb)
 
+[![Build Status](https://travis-ci.org/smizell/hfb.svg)](https://travis-ci.org/smizell/hfb)
+
 Functions for building [Hf representations](https://github.com/smizell/hf).
 
 <!-- TOC depth:6 withLinks:1 updateOnSave:1 orderedList:0 -->
