@@ -1,6 +1,6 @@
 {
   "name": "hfb",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Builder for Hf Representations",
   "main": "lib/index.js",
   "scripts": {

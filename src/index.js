@@ -42,4 +42,11 @@ export default {
     if (!_.isEmpty(newTransition)) obj.transitions.push(newTransition);
     return obj;
   },
+
+  wrap: (objToWrap = {}) => {
+    if (!_.isObject(objToWrap) || _.isArray(objToWrap)) return {};
+    let obj = {};
+    obj.attributes = objToWrap;
+    return obj;
+  },
 };

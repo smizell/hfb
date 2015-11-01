@@ -176,6 +176,18 @@ The `hfObj` variable now has:
 }
 ```
 
+### `hfb.wrap`
+
+If you have a normal object that you'd like to wrap as an Hf object, you can use `hfb.wrap`. It only accepts `object` types and will return an empty array if it receives anything other than an object.
+
+```js
+var oldObj = {
+	foo: 'bar'
+};
+
+var newObj = hfb.wrap(oldObj); // now {attributes: {foo: 'bar'}}
+```
+
 ## Developing and Contributing
 
 To test, you can run:
