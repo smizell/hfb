@@ -11,6 +11,7 @@ Functions for building [Hf representations](https://github.com/smizell/hf).
 		- [`hfb.addTransition`](#hfbaddtransition)
 		- [`hfb.addMetaAttributes`](#hfbaddmetaattributes)
 		- [`hfb.addMetaLink`](#hfbaddmetalink)
+		- [`hfb.wrap`](#hfbwrap)
 	- [Developing and Contributing](#developing-and-contributing)
 	- [License](#license)
 
